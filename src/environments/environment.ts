@@ -3,6 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  HERO_API_KEY: '10155611826251027',
+	HERO_API_URL: 'http://superheroapi.com/api.php/',
+	HERO_API_SEARCH: '/search/',
   production: false
 };
 
