@@ -8,8 +8,8 @@ import { HeroService } from './shared/hero.service';
 })
 export class AppComponent {
   heroes: any[];
-  heroesFound: boolean = false;
-  
+  heroesFound = false;
+
   constructor(private heroService: HeroService) {}
 
   onSearch(hero: string) {
@@ -17,7 +17,7 @@ export class AppComponent {
     .subscribe(
       data => this.searchCompleted(data),
       error => console.log(error),
-      () => console.log("Request Complete")
+      () => console.log('Request Complete')
     );
   }
 
