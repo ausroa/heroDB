@@ -11,11 +11,16 @@ a{
     font-size: 20px;
     color: black;
     background-color: rgb(193,225,246);
-    border: 1px solid black;
+    border: 5px solid black;
 }
 
 input{
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 21px;
     vertical-align: bottom;
+    border: none;
+}
+
+button{
+    border: none;
 }
