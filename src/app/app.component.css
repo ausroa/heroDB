@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 img{
-    width: 150px;
-    height: 145px;
+    width: 170px;
+    height: 195px;
     float: right;
 }
 
 a{
-    height: 170px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(193,225,246);
+    border: 1px solid black;
 }
 
 input{
