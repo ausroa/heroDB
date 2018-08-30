@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     background-color: rgb(168,213,242);
+    background: url("https://c1.staticflickr.com/6/5235/30181990746_f9c8a437ce_b.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
