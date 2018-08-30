@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12"
+        id="inputBoxandButton">
             <input type="text"
             [(ngModel)]="heroSearch">
             <button class="btn btn-success"
@@ -18,6 +19,7 @@
                 *ngFor="let hero of heroes">
                 Name: {{hero.name}}
                 <img src="{{hero.image.url}}"alt="hero"class="img-responsive"><br>
+                Full Name: {{hero.biography["full-name"]}}<br>
                 Intelligence: {{hero.powerstats.intelligence}}<br>
                 Strength: {{hero.powerstats.strength}}<br>
                 Speed: {{hero.powerstats.speed}}<br>
