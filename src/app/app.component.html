@@ -11,7 +11,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <ul class="list-group">
+            <ul class="list-group"
+            *ngIf="heroesFound; else heroNotFound">
                 <a href="#"
                 class="list-group-item"
                 *ngFor="let hero of heroes">
@@ -23,6 +24,7 @@
                 Durability: {{hero.powerstats.durability}}<br>
                 Power: {{hero.powerstats.power}}<br>
                 </a>
+                <ng-template #heroNotFound>Hero Not Found</ng-template>
             </ul>
         </div>
     </div>

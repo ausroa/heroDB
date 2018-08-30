@@ -24,6 +24,6 @@ export class AppComponent {
   searchCompleted(data) {
     this.heroesFound = true;
     this.heroes = data.results;
-    console.log(data.results);
+    console.log(data);
   }
 }
