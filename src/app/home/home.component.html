@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-12"
+      id="inputBoxandButton">
+          <input type="text"
+          [(ngModel)]="heroSearch">
+          <button class="btn btn-success"
+          (click)="onSearch(heroSearch)">Search</button>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <ul class="list-group">
+              <a [routerLink]="['/hero-detail']"
+              class="list-group-item"
+              *ngFor="let hero of heroes">
+              Name: {{hero.name}}
+              <img src="{{hero.image.url}}"alt="hero"class="img-responsive"><br>
+              Full Name: {{hero.biography["full-name"]}}<br>
+              Intelligence: {{hero.powerstats.intelligence}}<br>
+              Strength: {{hero.powerstats.strength}}<br>
+              Speed: {{hero.powerstats.speed}}<br>
+              Durability: {{hero.powerstats.durability}}<br>
+              Power: {{hero.powerstats.power}}<br>
+              </a>
+          </ul>
+      </div>
+  </div>
+</div>
