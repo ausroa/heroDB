@@ -1,13 +1,16 @@
-<ul class="list-group"
-*ngFor="let hero of heroes">
-  <p>
-    Name: {{hero.name}}
-    <img src="{{hero.image.url}}"alt="hero"class="img-responsive"><br>
-    Full Name: {{hero.biography["full-name"]}}<br>
-    Intelligence: {{hero.powerstats.intelligence}}<br>
-    Strength: {{hero.powerstats.strength}}<br>
-    Speed: {{hero.powerstats.speed}}<br>
-    Durability: {{hero.powerstats.durability}}<br>
-    Power: {{hero.powerstats.power}}<br>
-  </p>
-</ul>
+<div class="container" id="container1">
+  <div class="jumbotron">
+    <h1>{{ hero.name }}</h1>
+    <img src="{{ hero.image.url }}" alt=""><br>
+    <div class="container" id="container2">
+      <p>Full Name: {{hero.biography["full-name"]}}</p><br>
+      <p>Intelligence: {{hero.powerstats.intelligence}}</p><br>
+      <p>Strength: {{hero.powerstats.strength}}</p><br>
+      <p>Speed: {{hero.powerstats.speed}}</p><br>
+      <p>Durability: {{hero.powerstats.durability}}</p><br>
+      <p>Power: {{hero.powerstats.power}}</p><br>
+    </div>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">BACK</a></p>
+  </div>
+</div>
+

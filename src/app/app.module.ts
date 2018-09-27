@@ -10,7 +10,8 @@ import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'hero-detail', component: HeroDetailComponent}
+  {path: 'hero-detail', component: HeroDetailComponent},
+  {path: 'home', component: HomeComponent}
 ];
 
 @NgModule({

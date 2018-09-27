@@ -9,6 +9,7 @@ import { HeroService } from '../shared/hero.service';
 export class HomeComponent implements OnInit {
   heroes: any[];
   heroesFound = false;
+  heroSelection = {};
 
   constructor(private heroService: HeroService) {}
 
@@ -28,5 +29,9 @@ export class HomeComponent implements OnInit {
     this.heroesFound = true;
     this.heroes = data.results;
     console.log(data);
+  }
+
+  selectedHero(hero) {
+    this.heroService.selectedHero(hero);
   }
 }

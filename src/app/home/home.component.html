@@ -15,7 +15,8 @@
           <ul class="list-group">
               <a [routerLink]="['/hero-detail']"
               class="list-group-item"
-              *ngFor="let hero of heroes">
+              *ngFor="let hero of heroes"
+              (click)="selectedHero(hero)">
               Name: {{hero.name}}
               <img src="{{hero.image.url}}"alt="hero"class="img-responsive"><br>
               Full Name: {{hero.biography["full-name"]}}<br>

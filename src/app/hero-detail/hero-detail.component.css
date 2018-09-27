@@ -1,0 +1,19 @@
+.jumbotron {
+    width: auto;
+    height: auto;
+    background-color: rgb(193,225,246);
+}
+
+#container1 {
+    text-align: center;
+}
+
+#container2 {
+    text-align: left;
+}
+
+img {
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
